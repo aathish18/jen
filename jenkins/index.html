@@ -1,4 +1,45 @@
-1 this is my first project
-2 jenkins
-3 test
-4 it automation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Deployment Success</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #2496ed; /* Docker Blue */
+        }
+        h1 { color: #1d2129; }
+        p { color: #606770; }
+        .status-badge {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐳 Docker Container is Live!</h1>
+        <p>Your Jenkins job successfully built and deployed this page.</p>
+        <div class="status-badge">Status: Running</div>
+    </div>
+</body>
+</html>
