@@ -1,2 +1,2 @@
-FROM httpd:latest
-ADD index.html /usr/local/apache2/htdocs/index.html
+  FROM httpd:latest
+  ADD index.html /usr/local/apache2/htdocs/index.html
