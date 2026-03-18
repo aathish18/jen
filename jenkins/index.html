@@ -2,101 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Live Scoreboard</title>
+    <title>Invitation</title>
     <style>
-        :root {
-            --primary-green: #008751;
-            --dark-blue: #1a2a3a;
-            --white: #ffffff;
-            --gray: #f4f7f6;
-        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--gray);
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .scoreboard {
-            background-color: var(--dark-blue);
-            color: var(--white);
-            width: 90%;
-            max-width: 500px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            border-bottom: 8px solid var(--primary-green);
-        }
-        .header {
-            background-color: var(--primary-green);
-            padding: 15px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
             text-align: center;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 50px;
         }
-        .live-dot {
-            width: 10px;
-            height: 10px;
-            background-color: #ff4d4d;
-            border-radius: 50%;
-            display: inline-block;
-            animation: blink 1s infinite;
-        }
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0.3; }
-            100% { opacity: 1; }
-        }
-        .match-content {
+        .card {
+            background: white;
             padding: 30px;
-            text-align: center;
+            border-radius: 15px;
+            width: 400px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
-        .teams {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
+        h1 {
+            color: #e67e22;
         }
-        .score {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin: 10px 0;
-            color: var(--primary-green);
-        }
-        .overs {
-            font-size: 1.1rem;
-            color: #bdc3c7;
+        p {
+            font-size: 18px;
+            color: #333;
         }
         .footer {
-            background-color: rgba(255,255,255,0.05);
-            padding: 15px;
-            font-size: 0.9rem;
-            text-align: center;
+            margin-top: 20px;
             font-style: italic;
         }
     </style>
 </head>
 <body>
 
-    <div class="scoreboard">
-        <div class="header">
-            <span>T20 WORLD CUP</span>
-            <span><span class="live-dot"></span> LIVE</span>
-        </div>
+    <div class="card">
+        <h1>You're Invited!</h1>
+        <p>Join us to celebrate</p>
+        <h2>🎉 Special Event 🎉</h2>
         
-        <div class="match-content">
-            <div class="teams">IND vs AUS</div>
-            <div class="score">184/3</div>
-            <div class="overs">(17.4 Overs)</div>
-        </div>
+        <p><strong>Date:</strong> 25th March 2026</p>
+        <p><strong>Time:</strong> 6:00 PM</p>
+        <p><strong>Venue:</strong> Your Location Here</p>
 
-        <div class="footer">
-            Virat Kohli 82* (45) | Hardik Pandya 12 (8)
-        </div>
+        <p class="footer">We look forward to seeing you!</p>
     </div>
 
 </body>
