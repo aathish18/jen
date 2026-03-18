@@ -2,71 +2,137 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Elegant Invitation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation</title>
+
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: 'Georgia', serif;
-            background: #fdf6f0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
         }
-        .card {
-            background: #fff;
-            border: 2px solid #e8cfc1;
+
+        .container {
+            background: #ffffff;
             padding: 40px;
-            width: 450px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
             text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeIn 1.5s ease-in-out;
         }
+
         h1 {
-            font-size: 36px;
-            color: #b76e79;
+            font-size: 32px;
+            color: #6a11cb;
             margin-bottom: 10px;
         }
-        .divider {
-            width: 60px;
-            height: 2px;
-            background: #b76e79;
-            margin: 20px auto;
+
+        h2 {
+            font-size: 22px;
+            color: #2575fc;
+            margin-bottom: 20px;
         }
+
         p {
-            font-size: 18px;
+            font-size: 16px;
             color: #444;
             margin: 8px 0;
         }
-        .highlight {
-            font-size: 22px;
-            color: #8b4a56;
-            margin: 15px 0;
+
+        .details {
+            margin: 20px 0;
         }
-        .footer {
+
+        .highlight {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .btn {
             margin-top: 25px;
-            font-style: italic;
-            color: #777;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(45deg, #ff6a00, #ee0979);
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 500px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <div class="card">
-        <h1>Invitation</h1>
-        <div class="divider"></div>
+    <div class="container">
+        <h1>You're Invited 🎉</h1>
+        <h2>Grand Celebration Event</h2>
 
-        <p>You are cordially invited to</p>
-        <p class="highlight">A Special Celebration</p>
+        <p>We are delighted to invite you to celebrate this special occasion with us.</p>
 
-        <p><strong>Date:</strong> May 10, 2026</p>
-        <p><strong>Time:</strong> 5:00 PM</p>
-        <p><strong>Venue:</strong> Garden Venue, Your City</p>
+        <div class="details">
+            <p><span class="highlight">Date:</span> June 15, 2026</p>
+            <p><span class="highlight">Time:</span> 6:30 PM</p>
+            <p><span class="highlight">Venue:</span> Royal Banquet Hall</p>
+        </div>
 
-        <div class="divider"></div>
+        <p>Your presence will make our event more special.</p>
 
-        <p class="footer">With love & warm wishes</p>
+        <button class="btn" onclick="showMessage()">RSVP</button>
+
+        <footer>
+            With love & regards ❤️
+        </footer>
     </div>
+
+    <script>
+        function showMessage() {
+            alert("Thank you! We look forward to seeing you!");
+        }
+    </script>
 
 </body>
 </html>
