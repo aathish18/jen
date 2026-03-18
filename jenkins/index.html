@@ -5,47 +5,67 @@
     <title>Invitation</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #ffecd2, #fcb69f);
-            text-align: center;
-            padding: 50px;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #1e1e2f;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            width: 400px;
-            margin: auto;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        .invite-box {
+            background: #2c2c3e;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            width: 420px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
         }
         h1 {
-            color: #e67e22;
+            color: #ff7eb3;
+            margin-bottom: 10px;
+        }
+        h2 {
+            margin: 10px 0;
+            color: #ffd166;
         }
         p {
-            font-size: 18px;
-            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
         }
-        .footer {
+        .btn {
             margin-top: 20px;
-            font-style: italic;
+            padding: 12px 25px;
+            background: #ff7eb3;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ff4f9a;
         }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>You're Invited!</h1>
-        <p>Join us to celebrate</p>
-        <h2>🎉 Special Event 🎉</h2>
+    <div class="invite-box">
+        <h1>✨ You're Invited ✨</h1>
+        <h2>Grand Celebration</h2>
         
-        <p><strong>Date:</strong> 25th March 2026</p>
-        <p><strong>Time:</strong> 6:00 PM</p>
-        <p><strong>Venue:</strong> Your Location Here</p>
+        <p>We are delighted to invite you to join us for a special evening filled with joy and celebration.</p>
 
-        <p class="footer">We look forward to seeing you!</p>
+        <p><strong>Date:</strong> April 2, 2026</p>
+        <p><strong>Time:</strong> 7:30 PM</p>
+        <p><strong>Venue:</strong> Grand Hall, Your City</p>
+
+        <button class="btn" onclick="alert('Thank you! We look forward to seeing you!')">
+            RSVP Now
+        </button>
     </div>
 
 </body>
 </html>
-
-
